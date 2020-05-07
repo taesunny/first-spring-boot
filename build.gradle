@@ -1,5 +1,5 @@
-buildscript{
-    ext{
+buildscript {
+    ext {
         springBootVersion = '2.1.7.RELEASE'
     }
     repositories {
@@ -30,5 +30,6 @@ dependencies {
     compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('com.h2database:h2')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

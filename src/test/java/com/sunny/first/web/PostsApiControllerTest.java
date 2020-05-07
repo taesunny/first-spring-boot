@@ -4,7 +4,6 @@ import com.sunny.first.domain.posts.Posts;
 import com.sunny.first.domain.posts.PostsRepository;
 import com.sunny.first.web.dto.PostsSaveRequestDto;
 import com.sunny.first.web.dto.PostsUpdateRequestDto;
-import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
