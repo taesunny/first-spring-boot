@@ -34,6 +34,14 @@ public class PostsService {
         return id;
     }
 
+    @Transactional
+    public void delete(Long id) {
+        Posts posts = postsRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("No post. id=" + id));
+
+        postsRepository.delete(posts);
+    }
+
     @Transactional(readOnly = true) // faster by using readOnly
     public List<PostsListResponseDto> findAllDesc() {
         return postsRepository.findAllDesc().stream()
